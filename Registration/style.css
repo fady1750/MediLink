@@ -1,0 +1,90 @@
+/* Global Definitions */
+:root {
+  --primary-color: #007bff; /*Buttons, links, active states*/
+  --soft-white: #f9fafb; /*Backgrounds, form containers*/
+  --slate-gray: #4b5563; /*Text (main)*/
+  --accent-teal: #14b8a6; /*Highlighted info, CTA sections (for doctors)*/
+  --peach: #fda29b; /*Highlighted info, CTA sections (for patients)*/
+  --sky-blue: #e0f2fe; /*Card backgrounds, info boxes*/
+  --charcoal-black: #111827; /*Headers, footers*/
+  --soft-gray: #e5e7eb; /*Borders, dividers, muted text*/
+}
+/* html,
+body {
+  height: 100%;
+} */
+body {
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+  background-color: var(--sky-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--slate-gray);
+  transition: ease;
+}
+
+/* Signup Form */
+.sign-up {
+  width: 400px;
+  height: 600px;
+  border-radius: 30px;
+  padding: 20px;
+  background-color: var(--soft-white);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-transform: capitalize;
+}
+.sign-up h1 {
+  font-size: 45px;
+  position: absolute;
+  top: -80px;
+  left: -20px;
+}
+.sign-up label {
+  align-self: flex-start;
+  margin-left: 30px;
+  font-weight: bold;
+}
+.sign-up input {
+  width: 80%;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid var(--soft-gray);
+}
+.sign-up input:focus {
+  outline: none;
+  border: 1px solid #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.1);
+}
+.sign-up .sign-up-btn {
+  width: 80%;
+  height: 40px;
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--soft-white);
+  font-size: 1.2em;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.sign-up .sign-up-btn:hover {
+  background-color: #0062cc;
+  transform: scale(1.01);
+}
+.sign-up p {
+  margin-top: -5px;
+}
+.sign-up a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+.sign-up a:hover {
+  color: #0062cc;
+}

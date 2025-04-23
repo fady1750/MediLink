@@ -1,0 +1,93 @@
+/* Global Definitions */
+:root {
+  --primary-color: #007bff; /*Buttons, links, active states*/
+  --soft-white: #f9fafb; /*Backgrounds, form containers*/
+  --slate-gray: #4b5563; /*Text (main)*/
+  --accent-teal: #14b8a6; /*Highlighted info, CTA sections (for doctors)*/
+  --peach: #fda29b; /*Highlighted info, CTA sections (for patients)*/
+  --sky-blue: #e0f2fe; /*Card backgrounds, info boxes*/
+  --charcoal-black: #111827; /*Headers, footers*/
+  --soft-gray: #e5e7eb; /*Borders, dividers, muted text*/
+}
+/* html,
+  body {
+    height: 100%;
+  } */
+body {
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+  background-color: var(--sky-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--slate-gray);
+  transition: ease;
+  text-transform: capitalize;
+}
+/* login Container */
+.login {
+  width: 400px;
+  height: 350px;
+  background-color: var(--soft-white);
+  border-radius: 30px;
+  padding: 10px;
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.login h1 {
+  font-size: 45px;
+  position: absolute;
+  top: -80px;
+  left: -20px;
+}
+.login label {
+  align-self: flex-start;
+  margin-left: 30px;
+  font-weight: bold;
+}
+.login input {
+  width: 80%;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid var(--soft-gray);
+}
+.login input:focus {
+  outline: none;
+  border: 1px solid #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.1);
+}
+.login .login-btn {
+  width: 80%;
+  height: 40px;
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--soft-white);
+  font-size: 1.2em;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.login .login-btn:hover {
+  background-color: #0062cc;
+  transform: scale(1.01);
+}
+.login p {
+  margin-top: 10px;
+}
+.login a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+.login a:hover {
+  color: #0062cc;
+}
+.login .forgot-password {
+  align-self: flex-end;
+  margin: -5px 30px 10px 0;
+}
