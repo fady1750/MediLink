@@ -27,9 +27,11 @@ body {
 /* Signup Form */
 .sign-up {
   width: 400px;
-  height: 600px;
+  height: 550px;
   border-radius: 30px;
   padding: 20px;
+  margin-top: -225px;
+  transform: translateY(50%);
   background-color: var(--soft-white);
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
   display: flex;
